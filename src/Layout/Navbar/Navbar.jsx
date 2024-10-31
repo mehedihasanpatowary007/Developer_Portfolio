@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className={`sticky top-0 z-40 py-4 lg:rounded-lg lg:mt-10 bg-[#383434]`}>
       <div className="max-w-[95%] mx-auto hidden lg:flex items-center justify-between">
         <a
-          to={"#home"}
+          href={"#home"}
           title="Go to Home"
           className="text-3xl text-white font-bold"
         >
