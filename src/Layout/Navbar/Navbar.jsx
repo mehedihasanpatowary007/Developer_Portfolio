@@ -4,8 +4,9 @@ import Hamburger from "./Hamburger";
 import { navItems } from "./NavItems";
 import NavLogo from '../../assets/Images/logo.png'
 import { BiMessage } from "react-icons/bi";
+import { useState } from "react";
 const Navbar = () => {
-
+const [activeNavLink, setActiveNavLink] = useState('home')
   return (
     <nav className={`sticky top-0 z-40 py-4 lg:rounded-lg lg:mt-10 bg-[#383434]`}>
       <div className="max-w-[95%] mx-auto hidden lg:flex items-center justify-between">
@@ -24,7 +25,12 @@ const Navbar = () => {
                 className="relative group overflow-hidden uppercase"
               >
                 <a
-                  className="text-white font-semibold active:text-[#ffac04] hover:text-[#ffac04] duration-200"
+                  onClick={() => setActiveNavLink(navItem.name)}
+                  className={`${
+                    navItem.name === activeNavLink
+                      ? "text-[#ffac04]"
+                      : 'text-white'
+                  } font-semibold hover:text-[#ffac04] duration-200`}
                   href={navItem.path}
                 >
                   {navItem.name}
