@@ -1,0 +1,29 @@
+{
+  "services": [
+    {
+      "name": "Digital Marketing",
+      "icon": "./src/assets/Icons/digital_marketing.png",
+      "desc": "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
+    },
+    {
+      "name": "App Development",
+      "icon": "./src/assets/Icons//app_development.png",
+      "desc": "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
+    },
+    {
+      "name": "UI/UX Design",
+      "icon": "./src/assets/Icons/ui_ux.png",
+      "desc": "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
+    },
+    {
+      "name": "Web Design",
+      "icon": "./src/assets/Icons/web_design.png",
+      "desc": "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
+    }
+  ],
+
+  "projects":[
+
+  ]
+
+}

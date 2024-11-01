@@ -20,7 +20,7 @@ const Hamburger = () => {
         htmlFor="hamburger"
         className="fixed top-0 left-0 h-full w-full bg-black opacity-30 hidden peer-checked:block"
       ></label>
-      <div className=" fixed z-50 top-0 left-0 h-full md:w-[40%] w-[65%] bg-white peer-checked:block duration-150 translate-x-[-100%] peer-checked:translate-x-0">
+      <div className=" fixed z-50 top-0 left-0 h-full md:w-[40%] w-[65%] bg-[#383434] peer-checked:block duration-150 translate-x-[-100%] peer-checked:translate-x-0">
         <div className="flex justify-between px-1">
           <div className="text-2xl text-slate-500 font-bold">
             <img src={NavLogo} alt="brand_logo" className="w-32" />

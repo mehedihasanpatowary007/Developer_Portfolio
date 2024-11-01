@@ -1,4 +1,5 @@
-import Home from "./Home/Home"
+import Home from "./Components/Home/Home"
+import Services from "./Components/Services/Services"
 import Footer from "./Layout/Footer/Footer"
 import Navbar from "./Layout/Navbar/Navbar"
 
@@ -10,6 +11,7 @@ function App() {
     <>
     <Navbar/>
     <Home/>
+    <Services/>
     <Footer/>
     </>
   )

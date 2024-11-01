@@ -1,8 +1,8 @@
 import { FaArrowRight, FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
-import PersonBg from '../../src/assets/Images/person-bg.png'
-import Person from '../../src/assets/Images/person.png'
-import Star from '../../src/assets/Images/star.png'
+import PersonBg from '../../assets/Images/person-bg.png'
+import Person from '../../assets/Images/person.png'
+import Star from '../../assets/Images/star.png'
 
 const Home = () => {
   return (
