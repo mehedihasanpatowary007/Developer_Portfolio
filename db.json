@@ -31,7 +31,7 @@
     },
     {
       "name": "Figma",
-      "percentage":"90%",
+      "percentage": "90%",
       "icon": "./src/assets/Icons/figma.png"
     },
     {
@@ -53,6 +53,46 @@
       "name": "Illustrator",
       "percentage": "90%",
       "icon": "./src/assets/Icons/ai.png"
+    }
+  ],
+  "expertise": [
+    {
+      "name": "Lead Developer",
+      "instituteAndLocation": "Blockdots, London",
+      "period": "2022-Present",
+      "desc": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software."
+    },
+    {
+      "name": "Full Stack Web Developer",
+      "instituteAndLocation": "Parsons, The New School",
+      "period": "2021 - 2022",
+      "desc": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software."
+    },
+    {
+      "name": "UI/UX Designer",
+      "instituteAndLocation": "House of Life, Leeds",
+      "period": "2018 - 2023",
+      "desc": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software."
+    }
+  ],
+  "educations":[
+    {
+      "name": "Programming Course",
+      "instituteAndLocation": "Harverd University",
+      "period": "2006 - 2014",
+      "desc": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software."
+    },
+    {
+      "name": "Graphic Design Course",
+      "instituteAndLocation": "Blockdots, London",
+      "period": "2016 - 2020",
+      "desc": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software."
+    },
+    {
+      "name": "Web design course",
+      "instituteAndLocation": "University of California",
+      "period": "2012 - 2015",
+      "desc": "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. sectors of the economy or areas of culture sed mauris hendrerit, laoreet smart software."
     }
   ]
 }

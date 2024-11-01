@@ -1,3 +1,4 @@
+import ExpertAndEducation from "./Components/Expert&Education/ExpertAndEducation"
 import Home from "./Components/Home/Home"
 import Portfolio from "./Components/Portfolio/Portfolio"
 import Services from "./Components/Services/Services"
@@ -16,6 +17,7 @@ function App() {
     <Services/>
     <Portfolio/>
     <Skills/>
+    <ExpertAndEducation/>
     <Footer/>
     </>
   )

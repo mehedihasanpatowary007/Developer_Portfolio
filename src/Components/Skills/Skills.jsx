@@ -22,7 +22,7 @@ const Skills = () => {
               See My Expertise
             </div>
           </div>
-          <div className="grid justify-center lg:grid-cols-6 md:grid-cols-3 grid-cols-2 h-[3000px] sm:h-[1500px] md:h-[1000px] lg:h-[500px] items-end md:gap-5 mt-6">
+          <div className="md:h-[500px] w-full flex flex-wrap justify-center items-end lg:gap-5 md:gap-2 gap-2 mt-6">
             {skills.map((skill)=>{
                 return(
                     <SingleSkill key={skill.name} skill={skill}/>
