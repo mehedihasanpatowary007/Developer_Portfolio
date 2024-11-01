@@ -6,12 +6,12 @@ import Star from '../../src/assets/Images/star.png'
 
 const Home = () => {
   return (
-    <div id="home" className="mb-10 flex lg:flex-row flex-col items-center">
+    <div id="home" className="mb-10 flex lg:flex-row flex-col items-center mx-4">
       <div className="lg:w-1/2 mt-9 flex flex-col items-center lg:items-start">
         <h1 className="lg:text-6xl text-4xl font-bold text-white">
           I 👋 am Mehedi
         </h1>
-        <div className="text-5xl font-bold mt-5 text-gray-500">
+        <div className="text-2xl md:text-5xl font-bold mt-5 text-gray-500">
           <Typewriter
             options={{
               strings: ["Web Developer", "UI/Ux Designer"],
@@ -21,14 +21,12 @@ const Home = () => {
             }}
           />
         </div>
-        <p className="mt-7 text-white leading-7">
-          Hi, my name is Dalton Grant and I began using WordPress when <br /> it
-          first began. I’ve spent most of my waking hours for the last <br />{" "}
-          ten years designing, programming and operating WordPress <br /> sites.
+        <p className="mt-7 text-white leading-7 lg:text-start text-justify">
+          Hi, my name is Dalton Grant and I began using WordPress when it first began. I’ve spent most of my waking hours for the last ten years designing, programming and operating WordPress sites.
         </p>
-        <div className="mt-9 flex gap-4 items-center">
-          <button className="bg-gradient-to-l to-orange-600 from-[#ffac04]  text-white font-semibold px-8 py-4 rounded-md">
-            <a className="flex items-center gap-2" href="#contact">
+        <div className="mt-9 flex gap-6 md:gap-4 items-center md:flex-row flex-col">
+          <button className="bg-gradient-to-l to-orange-600 from-[#ffac04]  text-white font-semibold px-8 py-4 rounded-md hover:opacity-85 duration-300">
+            <a className="flex items-center gap-2 hover:scale-105 duration-300" href="#contact">
               <span>Hire Me Now</span>
               <span>
                 <FaArrowRight />

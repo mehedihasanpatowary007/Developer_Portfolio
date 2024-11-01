@@ -52,7 +52,7 @@ const [activeNavLink, setActiveNavLink] = useState('home')
           </a>
         </button>
       </div>
-      <div className="lg:hidden w-full flex justify-between px-4">
+      <div className="lg:hidden w-full flex justify-between items-center px-4">
         <h1 className="text-2xl text-slate-600 font-bold">
           <a to={"#home"}>
             <img src={NavLogo} alt="brand_logo" className="w-32" />
