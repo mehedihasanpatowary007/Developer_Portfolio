@@ -8,7 +8,7 @@ import { useState } from "react";
 const Navbar = () => {
 const [activeNavLink, setActiveNavLink] = useState('home')
   return (
-    <nav className={`sticky top-0 z-40 py-4 lg:rounded-lg lg:mt-10 bg-[#383434]`}>
+    <nav className={`sticky top-0 z-40 py-4 lg:rounded-lg lg:mt-10 lg:mx-14 bg-[#383434]`}>
       <div className="max-w-[95%] mx-auto hidden lg:flex items-center justify-between">
         <a
           href={"#home"}

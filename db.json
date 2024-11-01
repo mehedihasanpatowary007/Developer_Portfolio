@@ -22,8 +22,37 @@
     }
   ],
 
-  "projects":[
-
+  "projects": [],
+  "skills": [
+    {
+      "name": "Adobe XD",
+      "percentage": "80%",
+      "icon": "./src/assets/Icons/xd.png"
+    },
+    {
+      "name": "Figma",
+      "percentage":"90%",
+      "icon": "./src/assets/Icons/figma.png"
+    },
+    {
+      "name": "Wordpress",
+      "percentage": "70%",
+      "icon": "./src/assets/Icons/wordpress.png"
+    },
+    {
+      "name": "Photoshop",
+      "percentage": "65%",
+      "icon": "./src/assets/Icons/photoshop.png"
+    },
+    {
+      "name": "Sketch",
+      "percentage": "75%",
+      "icon": "./src/assets/Icons/sketch.png"
+    },
+    {
+      "name": "Illustrator",
+      "percentage": "90%",
+      "icon": "./src/assets/Icons/ai.png"
+    }
   ]
-
 }
