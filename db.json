@@ -22,7 +22,23 @@
     }
   ],
 
-  "projects": [],
+  "projects": [
+    {
+      "projectName":"Document manager application",
+      "category":["web", "Coding"],
+      "image":"./src/assets/Images/project_1.jpg"
+    },
+    {
+      "projectName":"Printable professional brochure templates",
+      "category":["Design", "Brochure"],
+      "image":"./src/assets/Images/project_2.jpg"
+    },
+    {
+      "projectName":"Create stunning product flexible mockups",
+      "category":["web", "Coding"],
+      "image":"./src/assets/Images/project_3.jpg"
+    }
+  ],
   "skills": [
     {
       "name": "Adobe XD",
