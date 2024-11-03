@@ -14,7 +14,10 @@ const Portfolio = () => {
   },[])
   return (
     <div className="py-32 md:container mx-auto px-3" id="portfolio">
-      <div className="flex flex-col justify-center items-center gap-5">
+      <div
+        data-aos="zoom-in-up"
+        className="aos-init aos-animate flex flex-col justify-center items-center gap-5"
+      >
         <div className="uppercase text-[18px] bg-transparent border-2 border-[#504b4b] py-1.5 px-6 bg-gradient-to-r from-orange-600 to-[#ffac04]  bg-clip-text text-transparent rounded-full font-medium">
           Portfolio
         </div>
@@ -22,12 +25,13 @@ const Portfolio = () => {
           My Recent Work
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-10 mt-10">
-        {
-          projects?.map(project => {
-            return <SingleProject key={project?.projectName} project={project}/>
-          })
-        }
+      <div
+        data-aos="zoom-in-up"
+        className="aos-init aos-animate flex flex-wrap justify-center gap-5 mt-10"
+      >
+        {projects?.map((project) => {
+          return <SingleProject key={project?.projectName} project={project} />;
+        })}
       </div>
     </div>
   );

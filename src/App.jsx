@@ -1,3 +1,4 @@
+import Contacts from "./Components/Contacts/Contacts"
 import ExpertAndEducation from "./Components/Expert&Education/ExpertAndEducation"
 import Home from "./Components/Home/Home"
 import Portfolio from "./Components/Portfolio/Portfolio"
@@ -18,6 +19,7 @@ function App() {
     <Portfolio/>
     <Skills/>
     <ExpertAndEducation/>
+    <Contacts/>
     <Footer/>
     </>
   )

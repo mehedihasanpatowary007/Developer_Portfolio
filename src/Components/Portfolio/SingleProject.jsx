@@ -4,15 +4,15 @@ import { GoArrowUpRight } from 'react-icons/go';
 
 const SingleProject = ({project}) => {
     return (
-      <div className="bg-gradient-to-bl from-[#181414] to-[#222020] shadow-lg rounded-md p-5 border border-[#383333] w-[270px] md:w-[320px] flex flex-col gap-4 ">
+      <div className="bg-gradient-to-bl from-[#181414] to-[#222020] shadow-lg rounded-md p-5 border border-[#383333] w-[270px] md:w-[370px] flex flex-col ">
         <div className="relative group">
           <img
-            className="size-[250px] md:size-[300px] rounded-md"
+            className="size-[250px] md:size-[350px] rounded-md"
             src={project?.image}
             alt=""
           />
           <div className="absolute top-0 opacity-0 group-hover:opacity-100 duration-300">
-            <div className="bg-black bg-opacity-80 md:h-[300px] md:w-[278px] w-[228px] h-[250px] flex items-center justify-center rounded-md">
+            <div className="bg-black bg-opacity-80 md:h-[350px] md:w-[328px] w-[228px] h-[250px] flex items-center justify-center rounded-md">
               <button className="bg-gradient-to-l to-orange-600 from-[#ffac04] font-bold px-4 py-2 rounded-md text-white text-xl">
                 See Details
               </button>
@@ -37,7 +37,7 @@ const SingleProject = ({project}) => {
               <GoArrowUpRight />
             </button>
           </div>
-          <h1 className="text-white hover:text-orange-600 duration-500 cursor-pointer md:text-3xl text-2xl md:font-bold font-semibold">
+          <h1 className="text-white hover:text-orange-600 duration-500 cursor-pointer md:text-2xl text-xl md:font-bold font-semibold">
             {project?.projectName}
           </h1>
         </div>

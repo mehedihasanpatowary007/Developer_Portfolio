@@ -5,8 +5,11 @@ Aos.init();
 
 const Services = () => {
   return (
-    <div className="bg-[#180c14] py-32" id="services">
-      <div className="flex flex-col justify-center items-center gap-5">
+    <div className="bg-[#180c14] py-32 " id="services">
+      <div
+        data-aos="zoom-in-up"
+        className="aos-init aos-animate flex flex-col justify-center items-center gap-5"
+      >
         <div className="uppercase text-[18px] bg-transparent border-2 border-[#504b4b] py-1.5 px-6 bg-gradient-to-r from-orange-600 to-[#ffac04]  bg-clip-text text-transparent rounded-full font-medium">
           Services
         </div>
@@ -14,7 +17,10 @@ const Services = () => {
           Our services
         </div>
       </div>
-      <div className="relative flex justify-center items-center group mt-32">
+      <div
+        data-aos="zoom-in-up"
+        className="aos-init aos-animate relative flex justify-center items-center group mt-14"
+      >
         <div className="transition-transform transform hover:scale-105 z-30 duration-500 shadow">
           <img
             className="bg-[#282424] h-48 w-60 hidden group-hover:block rounded-lg"
