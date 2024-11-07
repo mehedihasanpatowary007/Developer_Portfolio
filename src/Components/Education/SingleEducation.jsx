@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 const SingleEducation = ({ education }) => {
   return (
     <div className="bg-[#282424] border border-[#3d3b3b] rounded-lg">
-      <div className="border-b border-[#3d3b3b] flex md:flex-row flex-col gap-5 justify-between md:items-center md:p-8 p-4">
+      <div className="border-b border-[#3d3b3b] flex xl:flex-row flex-col gap-5 justify-between xl:items-center md:p-8 p-4">
         <div className="flex flex-col gap-3">
           <h1 className="md:text-2xl text-base font-bold text-white">
             {education?.name}

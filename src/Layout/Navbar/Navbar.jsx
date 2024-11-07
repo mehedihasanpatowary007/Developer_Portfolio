@@ -4,11 +4,34 @@ import Hamburger from "./Hamburger";
 import { navItems } from "./NavItems";
 import NavLogo from '../../assets/Images/logo.png'
 import { BiMessage } from "react-icons/bi";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const Navbar = () => {
 const [activeNavLink, setActiveNavLink] = useState('home')
+const [navStyle, setNavStyle] = useState(false)
+
+const handleScroll = () => {
+  if(window.scrollY > 50){
+    setNavStyle(true)
+  }
+  else{
+    setNavStyle(false)
+  }
+}
+
+useEffect(()=>{
+  window.addEventListener('scroll', handleScroll)
+
+
+  return ()=>{
+    window.addEventListener('scroll', handleScroll)
+  }
+},[])
   return (
-    <nav className={`sticky top-0 z-40 py-4 lg:rounded-lg lg:mt-10 lg:mx-14 bg-[#383434]`}>
+    <nav
+      className={`sticky top-0 z-40 py-4 lg:mt-10 duration-300 ${
+        navStyle ? "bg-opacity-85" : "lg:mx-14 lg:rounded-lg"
+      } bg-[#383434]`}
+    >
       <div className="max-w-[95%] mx-auto hidden lg:flex items-center justify-between">
         <a
           href={"#home"}
@@ -29,7 +52,7 @@ const [activeNavLink, setActiveNavLink] = useState('home')
                   className={`${
                     navItem.name === activeNavLink
                       ? "text-[#ffac04]"
-                      : 'text-white'
+                      : "text-white"
                   } font-semibold hover:text-[#ffac04] duration-200`}
                   href={navItem.path}
                 >
@@ -43,7 +66,7 @@ const [activeNavLink, setActiveNavLink] = useState('home')
         <button>
           <a
             className="text-xl flex gap-1 items-end bg-white rounded-full hover:bg-orange-600 hover:text-black duration-200 py-3 px-8"
-            href=""
+            href="#contacts"
           >
             <span>Let&apos;s Talk</span>
             <span className="text-2xl">
@@ -54,7 +77,7 @@ const [activeNavLink, setActiveNavLink] = useState('home')
       </div>
       <div className="lg:hidden w-full flex justify-between items-center px-4">
         <h1 className="text-2xl text-slate-600 font-bold">
-          <a to={"#home"}>
+          <a href={"#home"}>
             <img src={NavLogo} alt="brand_logo" className="w-32" />
           </a>
         </h1>

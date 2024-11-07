@@ -1,19 +1,14 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useContext } from "react";
 import SingleProject from "./SIngleProject";
+import ProjectDetails from "./ProjectDetails";
+import { ProjectDetailsContext } from "../../Context/ProjectDetailsContext";
+import Aos from "aos";
+Aos.init()
 
 const Portfolio = () => {
-  const [projects, setProjects] = useState([]);
-  const loadProjects = async () => {
-    const response = await fetch("http://localhost:3000/projects");
-    const data = await response.json();
-    setProjects(data);
-  };
-  useEffect(()=>{
-    loadProjects()
-  },[])
+  const {projects} = useContext(ProjectDetailsContext)
   return (
-    <div className="py-32 md:container mx-auto px-3" id="portfolio">
+    <div className="md:py-16 py-8 md:container mx-auto px-3" id="portfolio">
       <div
         data-aos="zoom-in-up"
         className="aos-init aos-animate flex flex-col justify-center items-center gap-5"
@@ -29,10 +24,11 @@ const Portfolio = () => {
         data-aos="zoom-in-up"
         className="aos-init aos-animate flex flex-wrap justify-center gap-5 mt-10"
       >
-        {projects?.map((project) => {
+        {projects.slice(0, 3)?.map((project) => {
           return <SingleProject key={project?.projectName} project={project} />;
         })}
       </div>
+      <ProjectDetails />
     </div>
   );
 };

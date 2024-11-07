@@ -1,7 +1,9 @@
+import Aos from "aos";
 
+Aos.init()
 const Contacts = () => {
     return (
-      <div id="contacts" className="bg-[#200c14] py-12 md:py-32">
+      <div id="contacts" className="md:py-16 py-8">
         <div className="md:container mx-auto px-5">
           <div className="flex flex-col justify-center items-center gap-5">
             <div className="uppercase text-[18px] bg-transparent border-2 border-[#504b4b] py-1.5 px-6 bg-gradient-to-r from-orange-600 to-[#ffac04]  bg-clip-text text-transparent rounded-full font-medium">

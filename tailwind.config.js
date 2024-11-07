@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {
       container:{
-        
         padding:'50px'
       }
     },
