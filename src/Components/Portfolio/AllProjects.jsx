@@ -18,9 +18,9 @@ const AllProjects = () => {
           
           className="flex flex-wrap justify-center gap-5 mt-10"
         >
-          {projects?.map((project) => {
+          {projects?.map((project,index) => {
             return (
-              <SingleProject key={project?.projectName} project={project} />
+              <SingleProject key={index + 3} project={project} />
             );
           })}
         </div>

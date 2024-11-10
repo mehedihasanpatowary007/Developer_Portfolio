@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BlogDetails from "./BlogDetails";
 import { posts } from "./BlogItems";
 import SingleBlog from "./SingleBlog";
@@ -24,14 +25,17 @@ const Blogs = () => {
         </div>
         <div
           data-aos="zoom-in-up"
-          className="aos-init aos-animate flex flex-wrap justify-center gap-4 mt-10"
+          className="wrapper aos-init aos-animate flex flex-wrap justify-center gap-4 mt-10"
         >
           {posts.slice(0, 3).map((post, index) => (
-            <SingleBlog key={index} post={post} />
+            <SingleBlog key={index + 1} post={post} />
           ))}
         </div>
         <BlogDetails />
       </div>
+      <Link className="text-5xl" to={"/all-blog"}>
+        See More
+      </Link>
     </div>
   );
 }

@@ -7,6 +7,8 @@ const ProjectDetailsProvider = ({ children }) => {
      const [isModalOpen, setModalOpen] = useState(false);
      const [currentPost, setCurrentPost] = useState({});
      const [projects, setProjects] = useState([]);
+
+     
      const loadProjects = async () => {
        const response = await fetch("http://localhost:3000/projects");
        const data = await response.json();

@@ -8,7 +8,7 @@ const AllBlogs = () => {
     return (
       <div
         id="blog"
-        className="bg-[#200c14] text-white flex flex-col items-center "
+        className="text-white flex flex-col items-center "
       >
         <div className="md:container px-5 md:py-16 py-8">
           <div
@@ -22,7 +22,7 @@ const AllBlogs = () => {
           </div>
           <div className="flex flex-wrap justify-center gap-4 mt-10">
             {posts.map((post, index) => (
-              <SingleBlog key={index} post={post} />
+              <SingleBlog key={index + 2} post={post} />
             ))}
           </div>
           <BlogDetails />

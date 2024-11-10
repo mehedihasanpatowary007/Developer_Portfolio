@@ -3,6 +3,7 @@ import SingleProject from "./SIngleProject";
 import ProjectDetails from "./ProjectDetails";
 import { ProjectDetailsContext } from "../../Context/ProjectDetailsContext";
 import Aos from "aos";
+import { Link } from "react-router-dom";
 Aos.init()
 
 const Portfolio = () => {
@@ -22,13 +23,16 @@ const Portfolio = () => {
       </div>
       <div
         data-aos="zoom-in-up"
-        className="aos-init aos-animate flex flex-wrap justify-center gap-5 mt-10"
+        className="wrapper aos-init aos-animate flex flex-wrap justify-center gap-5 mt-10"
       >
-        {projects.slice(0, 3)?.map((project) => {
-          return <SingleProject key={project?.projectName} project={project} />;
+        {projects.slice(0, 3)?.map((project, index) => {
+          return <SingleProject key={index + 4} project={project} />;
         })}
       </div>
       <ProjectDetails />
+      <Link className="text-5xl" to={"/all-project"}>
+        See More
+      </Link>
     </div>
   );
 };

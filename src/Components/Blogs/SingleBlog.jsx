@@ -1,19 +1,18 @@
 /* eslint-disable react/prop-types */
-import { useContext } from "react";
 import { BsArrowsFullscreen } from "react-icons/bs";
-import { BlogDetailsContext } from "../../Context/BlogDetailsContext";
+import useBlogDetails from "../CustomHook/useBlogDetails";
 const SinglePost = ({ post }) => {
   const { title, description, image } = post;
-  const { setCurrentPost, setModalOpen } = useContext(BlogDetailsContext);
+  const { setCurrentPost, setIsOpen } = useBlogDetails()
   return (
     <div
       onClick={() => {
         setCurrentPost(post);
-        setModalOpen(true);
+        setIsOpen(true);
       }}
       className="max-w-xs cursor-pointer"
     >
-      <div className="group relative bg-gray-800 rounded-lg border border-gray-700 shadow-md transition-transform duration-300 transform hover:scale-[1.01] p-4">
+      <div className="group relative  bg-gray-800 rounded-lg border border-gray-700 shadow-md transition-transform duration-300 transform hover:scale-[1.01] p-4">
         <img
           className="w-full h-48 object-cover rounded-t-lg"
           src={image}

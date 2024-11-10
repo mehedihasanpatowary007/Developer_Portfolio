@@ -2,18 +2,12 @@ import { useState } from "react";
 import { BlogDetailsContext } from "../Context/BlogDetailsContext";
 import PropTypes from "prop-types";
 const BlogDetailsProvider = ({ children }) => {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [currentPost, setCurrentPost] = useState({});
-  console.log(isModalOpen, currentPost);
-
-  const value = {
-    isModalOpen,
-    setModalOpen,
-    currentPost,
-    setCurrentPost,
-  };
   return (
-    <BlogDetailsContext.Provider value={value}>
+    <BlogDetailsContext.Provider
+      value={{ isOpen, setIsOpen, currentPost, setCurrentPost }}
+    >
       {children}
     </BlogDetailsContext.Provider>
   );
