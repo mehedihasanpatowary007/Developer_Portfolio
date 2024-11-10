@@ -54,8 +54,8 @@ const Skills = () => {
                   </div>
                 </div>
                 <div className="relative size-14 md:size-20 rounded-lg bg-[#383537] flex justify-center items-center cursor-pointer group ">
-                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1 ">
-                    Tailwind
+                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1 text-nowrap">
+                    Tailwind Css
                     <div className="absolute left-1/2 w-2 h-2 bg-white rotate-45 -bottom-1 -translate-x-1/2"></div>
                   </div>
                   <svg
@@ -94,8 +94,8 @@ const Skills = () => {
                   </svg>
                 </div>
                 <div className="relative size-14 md:size-20 rounded-lg bg-[#383537] flex justify-center items-center cursor-pointer group ">
-                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1 ">
-                    ReactJs
+                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1 text-nowrap">
+                    React Js
                     <div className="absolute left-1/2 w-2 h-2 bg-white rotate-45 -bottom-1 -translate-x-1/2"></div>
                   </div>
                   <svg
@@ -113,8 +113,8 @@ const Skills = () => {
                   </svg>
                 </div>
                 <div className="relative size-14 md:size-20 rounded-lg bg-[#383537] flex justify-center items-center cursor-pointer group ">
-                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1">
-                    TS
+                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1 text-nowrap">
+                    Type Script
                     <div className="absolute left-1/2 w-2 h-2 bg-white rotate-45 -bottom-1 -translate-x-1/2"></div>
                   </div>
                   <svg
@@ -172,8 +172,8 @@ const Skills = () => {
                   </svg>
                 </div>
                 <div className="relative size-14 md:size-20 rounded-lg bg-[#383537] flex justify-center items-center cursor-pointer group ">
-                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1 ">
-                    NodeJs
+                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1 text-nowrap">
+                    Node Js
                     <div className="absolute left-1/2 w-2 h-2 bg-white rotate-45 -bottom-1 -translate-x-1/2"></div>
                   </div>
                   <svg
@@ -190,8 +190,8 @@ const Skills = () => {
                   </svg>
                 </div>
                 <div className="relative size-14 md:size-20 rounded-lg bg-[#383537] flex justify-center items-center cursor-pointer group ">
-                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1 ">
-                    ExpressJs
+                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1 text-nowrap">
+                    Express Js
                     <div className="absolute left-1/2 w-2 h-2 bg-white rotate-45 -bottom-1 -translate-x-1/2"></div>
                   </div>
                   <svg
@@ -228,8 +228,8 @@ const Skills = () => {
                   </svg>
                 </div>
                 <div className="relative size-14 md:size-20 rounded-lg bg-[#383537] flex justify-center items-center cursor-pointer group">
-                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1 ">
-                    NextJs
+                  <div className="absolute opacity-0 group-hover:opacity-100 duration-300 -top-9 left-1/2 -translate-x-1/2 bg-white text-sm rounded text-black px-2 py-1 text-nowrap">
+                    Next Js
                     <div className="absolute left-1/2 w-2 h-2 bg-white rotate-45 -bottom-1 -translate-x-1/2"></div>
                   </div>
                   <div className="h-4 md:h-8 w-4 md:w-8">

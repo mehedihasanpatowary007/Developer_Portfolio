@@ -3,6 +3,7 @@ import BlogDetails from "./BlogDetails";
 import { posts } from "./BlogItems";
 import SingleBlog from "./SingleBlog";
 import Aos from "aos";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 Aos.init()
 
 const Blogs = () => {
@@ -32,10 +33,18 @@ const Blogs = () => {
           ))}
         </div>
         <BlogDetails />
-      </div>
-      <Link className="text-5xl" to={"/all-blog"}>
-        See More
+      <Link
+        className="text-xl text-white flex justify-end mt-10"
+        to={"/all-blog"}
+      >
+        <div className="flex gap-2 items-center hover:scale-105 duration-300 hover:text-[#ffac04] font-semibold">
+          <span>See More</span>
+          <span className="">
+            <MdOutlineArrowForwardIos />
+          </span>
+        </div>
       </Link>
+      </div>
     </div>
   );
 }

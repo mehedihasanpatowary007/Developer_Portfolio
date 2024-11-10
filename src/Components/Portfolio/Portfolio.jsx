@@ -4,6 +4,7 @@ import ProjectDetails from "./ProjectDetails";
 import { ProjectDetailsContext } from "../../Context/ProjectDetailsContext";
 import Aos from "aos";
 import { Link } from "react-router-dom";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 Aos.init()
 
 const Portfolio = () => {
@@ -30,8 +31,16 @@ const Portfolio = () => {
         })}
       </div>
       <ProjectDetails />
-      <Link className="text-5xl" to={"/all-project"}>
-        See More
+      <Link
+        className="text-xl text-white flex justify-end mt-10"
+        to={"/all-project"}
+      >
+        <div className="flex gap-2 items-center hover:scale-105 duration-300 hover:text-[#ffac04] font-semibold">
+          <span>See More</span>
+          <span className="">
+            <MdOutlineArrowForwardIos />
+          </span>
+        </div>
       </Link>
     </div>
   );
