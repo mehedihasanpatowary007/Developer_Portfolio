@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import SingleProject from "./SIngleProject";
+import SingleProject from "./SingleProject";
 import ProjectDetails from "./ProjectDetails";
 import { ProjectDetailsContext } from "../../Context/ProjectDetailsContext";
 import Aos from "aos";
